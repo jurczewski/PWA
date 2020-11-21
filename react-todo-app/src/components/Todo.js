@@ -1,4 +1,6 @@
-export default function Todo(props){
+import React from "react";
+
+const Todo = props => {
   return (
     <li className="todo stack-small">
       <div className="c-cb">
@@ -16,5 +18,7 @@ export default function Todo(props){
         </button>
       </div>
     </li>
-  );
+  )
 }
+
+export default Todo
