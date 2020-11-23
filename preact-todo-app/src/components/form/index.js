@@ -3,12 +3,10 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 
 const Form = ({ className = '', itemsAdd }) => {
     const input = useRef(null);
-    const [value, setValue] = useState(
-        new URL(window.location).searchParams.get('title') || ''
-    );
+    const [value, setValue] = useState(null);
 
     useEffect(() => {
-        const params = new URL(window.location).searchParams;
+        const params = null;
         const v = [
             ...(params.get('title') ? [params.get('title')] : []),
             ...(params.get('text') ? [params.get('text')] : []),
