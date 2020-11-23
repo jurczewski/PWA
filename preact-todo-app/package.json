@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "default-app",
+  "name": "preact-todo-app",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
